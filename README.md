@@ -15,4 +15,12 @@ A small draft of a tool that will automatically generate a lot of cool routine t
 - pip install -r requirements.txt
 - brownie compile
 - python3 contracts/app.py
-- localhost:5000/generate
+- GET localhost:5000/generate
+
+## Overview screenshot
+
+![overview](https://i.imgur.com/oBlGTLY.png)
+
+## Generated code
+
+![tests](https://i.imgur.com/0nmjxzJ.png)

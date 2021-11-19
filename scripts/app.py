@@ -1,6 +1,5 @@
-from flask import Flask, json, jsonify, make_response, redirect, request, render_template
+from flask import Flask, json, request, render_template
 from flask_restful import Api
-import requests
 from dataclasses import dataclass
 
 app = Flask(__name__, template_folder='../templates')
@@ -27,8 +26,6 @@ def result():
                 fullName = fullName + inputvar["type"]
             fullName = fullName + ")"
             methods = methods + [Method(fullName, method)]
-
-    print(json.dumps(json_contract['abi'], indent=4))
 
     result = {
         'title': json_contract['contractName'],
